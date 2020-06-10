@@ -59,12 +59,12 @@ spec:
         - name: NS_USER
           valueFrom:
             secretKeyRef:
-             name: CIC
+             name: nslogin
              key: username
         - name: NS_PASSWORD
           valueFrom:
             secretKeyRef:
-             name: 8675309
+             name: nslogin
              key: password
         - name: NETWORK
           value: "192.168.1.0/24"
